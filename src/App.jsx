@@ -234,8 +234,8 @@ export default function App() {
               desc: "Virtual internship focused on dynamic web application development.",
               link: "https://drive.google.com/file/d/1IoI2s1JwQFLy6O6Xt0zx6tG1Qbr5S0ct/view?usp=drive_link",
             },
-            { title: "Cloud with DevOps", desc: "Ongoing cloud & DevOps training.", link: null },
-            { title: "Java Full Development", desc: "Currently pursuing full-stack Java.", link: null },
+            { title: "Cloud with DevOps", desc: "Cloud & DevOps training.", link: null },
+            { title: "Java Full Development", desc: "Full-stack Java training.", link: null },
           ].map((cert, i) => (
             <div key={i} className="cert-card">
               <h3>{cert.title}</h3>
@@ -245,7 +245,6 @@ export default function App() {
                   Download Certificate
                 </a>
               ) : (
-                <span className="ongoing">Ongoing</span>
               )}
             </div>
           ))}
