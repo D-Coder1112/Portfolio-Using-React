@@ -240,11 +240,10 @@ export default function App() {
             <div key={i} className="cert-card">
               <h3>{cert.title}</h3>
               <p>{cert.desc}</p>
-              {cert.link ? (
+              {cert.link && (
                 <a href={cert.link} target="_blank" rel="noreferrer" className="cert-btn">
                   Download Certificate
                 </a>
-              ) : (
               )}
             </div>
           ))}
